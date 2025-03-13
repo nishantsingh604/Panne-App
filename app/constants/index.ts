@@ -5,8 +5,8 @@ export const navigationLinks = [
   },
 
   {
-    img: "/icons/user.svg",
-    selectedImg: "/icons/user-fill.svg",
+    img: "/public/icons/user.svg",
+    selectedImg: "/public/icons/user-fill.svg",
     href: "/my-profile",
     label: "My Profile",
   },
@@ -14,27 +14,27 @@ export const navigationLinks = [
 
 export const adminSideBarLinks = [
   {
-    img: "/icons/admin/home.svg",
+    img: "/public/icons/admin/home.svg",
     route: "/admin",
     text: "Home",
   },
   {
-    img: "/icons/admin/users.svg",
+    img: "/public/icons/admin/users.svg",
     route: "/admin/users",
     text: "All Users",
   },
   {
-    img: "/icons/admin/book.svg",
+    img: "/public/icons/admin/book.svg",
     route: "/admin/books",
     text: "All Books",
   },
   {
-    img: "/icons/admin/bookmark.svg",
+    img: "/public/icons/admin/bookmark.svg",
     route: "/admin/book-requests",
     text: "Borrow Requests",
   },
   {
-    img: "/icons/admin/user.svg",
+    img: "/public/icons/admin/user.svg",
     route: "/admin/account-requests",
     text: "Account Requests",
   },
