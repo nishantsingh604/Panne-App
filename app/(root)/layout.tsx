@@ -17,7 +17,7 @@ const layout = async ({children}: {children: ReactNode}) => {
     if(!session?.user?.id) return;
 
     const user = await db
-    .select()t
+    .select()
     .from(users)
     .where(eq(users.id,session?.user?.id))
     .limit(1);
