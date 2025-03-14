@@ -23,8 +23,10 @@ import {
 
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-import { FIELD_NAMES } from "@/app/constants";
+import { FIELD_NAMES, FIELD_TYPES } from "@/app/constants";
 import { Link } from "lucide-react";
+import FileUpload from "./FileUpload";
+import { Input } from "./ui/input";
 
 interface Props<T extends FieldValues> {
   schema: ZodType<T>;

@@ -1,12 +1,12 @@
 import React from 'react'
 
-const 
+const Page
  = () => {
   return (
     <div>
-        
+Page
     </div>
   )
 }
 
-export default 
+export default Page;

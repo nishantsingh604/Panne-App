@@ -1,3 +1,4 @@
+"use client";
 import { adminSideBarLinks } from '@/app/constants'
 import React from 'react';
 
@@ -8,7 +9,7 @@ import { usePathname } from "next/navigation";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Session } from "next-auth";
 
-const Sidebar = () => {
+const Sidebar = ({session}:{session: Session}) => {
   return (
     <div className="admin-sidebar">
       <div>
