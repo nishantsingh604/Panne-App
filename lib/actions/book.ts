@@ -18,7 +18,7 @@ export const borrowBook = async (params: BorrowBookParams) => {
     if (!book.length || book[0].availableCopies <= 0) {
       return {
         success: false,
-        error: "Book is not available for borrowing",
+        error: "Book is not available for borrowing"
       };
     }
 
@@ -28,7 +28,7 @@ export const borrowBook = async (params: BorrowBookParams) => {
       userId,
       bookId,
       dueDate,
-      status: "BORROWED",
+      status: "BORROWED"
     });
 
     await db
@@ -38,14 +38,14 @@ export const borrowBook = async (params: BorrowBookParams) => {
 
     return {
       success: true,
-      data: JSON.parse(JSON.stringify(record)),
+      data: JSON.parse(JSON.stringify(record))
     };
   } catch (error) {
     console.log(error);
 
     return {
       success: false,
-      error: "An error occurred while borrowing the book",
+      error: "An error occurred while borrowing the book"
     };
   }
 };

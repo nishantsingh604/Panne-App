@@ -8,6 +8,13 @@
       "when": 1740842539889,
       "tag": "0000_narrow_mother_askani",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1742012990135,
+      "tag": "0001_majestic_la_nuit",
+      "breakpoints": true
     }
   ]
 }
