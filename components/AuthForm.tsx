@@ -23,7 +23,7 @@ import {
 
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-import { FIELD_NAMES, FIELD_TYPES } from "@/app/constants";
+import { FIELD_NAMES, FIELD_TYPES } from "@/constants";
 import { Link } from "lucide-react";
 import FileUpload from "./FileUpload";
 import { Input } from "./ui/input";
@@ -68,12 +68,14 @@ const AuthForm = <T extends FieldValues>({
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl font-semibold text-white">
-        {isSignIn ? "Welcome back to BookWise" : "Create your library account"}
+        {isSignIn
+          ? "Welcome back to Panne"
+          : "Create your library account, and start learning"}
       </h1>
       <p className="text-light-100">
         {isSignIn
           ? "Access the vast collection of resources, and stay updated"
-          : "Please complete all fields and upload a valid university ID to gain access to the library"}
+          : "Please complete all fields and upload a valid university ID to gain access to the website"}
       </p>
       <Form {...form}>
         <form
@@ -124,7 +126,7 @@ const AuthForm = <T extends FieldValues>({
       </Form>
 
       <p className="text-center text-base font-medium">
-        {isSignIn ? "New to BookWise? " : "Already have an account? "}
+        {isSignIn ? "New to Panne? " : "Already have an account? "}
 
         <Link
           href={isSignIn ? "/sign-up" : "/sign-in"}

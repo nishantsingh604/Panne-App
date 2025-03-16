@@ -1,43 +1,43 @@
 export const navigationLinks = [
   {
     href: "/library",
-    label: "Library",
+    label: "Library"
   },
 
   {
-    img: "/public/icons/user.svg",
-    selectedImg: "/public/icons/user-fill.svg",
+    img: "/icons/user.svg",
+    selectedImg: "/icons/user-fill.svg",
     href: "/my-profile",
-    label: "My Profile",
-  },
+    label: "My Profile"
+  }
 ];
 
 export const adminSideBarLinks = [
   {
-    img: "/public/icons/admin/home.svg",
+    img: "/icons/admin/home.svg",
     route: "/admin",
-    text: "Home",
+    text: "Home"
   },
   {
-    img: "/public/icons/admin/users.svg",
+    img: "/icons/admin/users.svg",
     route: "/admin/users",
-    text: "All Users",
+    text: "All Users"
   },
   {
-    img: "/public/icons/admin/book.svg",
+    img: "/icons/admin/book.svg",
     route: "/admin/books",
-    text: "All Books",
+    text: "All Books"
   },
   {
-    img: "/public/icons/admin/bookmark.svg",
+    img: "/icons/admin/bookmark.svg",
     route: "/admin/book-requests",
-    text: "Borrow Requests",
+    text: "Borrow Requests"
   },
   {
-    img: "/public/icons/admin/user.svg",
+    img: "/icons/admin/user.svg",
     route: "/admin/account-requests",
-    text: "Account Requests",
-  },
+    text: "Account Requests"
+  }
 ];
 
 export const FIELD_NAMES = {
@@ -45,14 +45,14 @@ export const FIELD_NAMES = {
   email: "Email",
   universityId: "University ID Number",
   password: "Password",
-  universityCard: "Upload University ID Card",
+  universityCard: "Upload University ID Card"
 };
 
 export const FIELD_TYPES = {
   fullName: "text",
   email: "email",
   universityId: "number",
-  password: "password",
+  password: "password"
 };
 
 export const sampleBooks = [
@@ -70,7 +70,7 @@ export const sampleBooks = [
     cover: "https://m.media-amazon.com/images/I/81J6APjwxlL.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death. A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death.",
+      "A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death. A dazzling novel about all the choices that go into a life well lived, The Midnight Library tells the story of Nora Seed as she finds herself between life and death."
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const sampleBooks = [
     cover: "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "A revolutionary guide to making good habits, breaking bad ones, and getting 1% better every day.",
+      "A revolutionary guide to making good habits, breaking bad ones, and getting 1% better every day."
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ export const sampleBooks = [
       "https://m.media-amazon.com/images/I/7186YfjgHHL._AC_UF1000,1000_QL80_.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "An essential guide to understanding the core mechanisms of JavaScript, focusing on scope and closures.",
+      "An essential guide to understanding the core mechanisms of JavaScript, focusing on scope and closures."
   },
   {
     id: 4,
@@ -120,7 +120,7 @@ export const sampleBooks = [
       "https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UF1000,1000_QL80_.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "A magical tale of Santiago, an Andalusian shepherd boy, who embarks on a journey to find a worldly treasure.",
+      "A magical tale of Santiago, an Andalusian shepherd boy, who embarks on a journey to find a worldly treasure."
   },
   {
     id: 5,
@@ -136,7 +136,7 @@ export const sampleBooks = [
     cover: "https://m.media-amazon.com/images/I/81JJ7fyyKyS.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "Rules for focused success in a distracted world, teaching how to cultivate deep focus to achieve peak productivity.",
+      "Rules for focused success in a distracted world, teaching how to cultivate deep focus to achieve peak productivity."
   },
   {
     id: 6,
@@ -153,7 +153,7 @@ export const sampleBooks = [
       "https://m.media-amazon.com/images/I/71T7aD3EOTL._UF1000,1000_QL80_.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "A handbook of agile software craftsmanship, offering best practices and principles for writing clean and maintainable code.",
+      "A handbook of agile software craftsmanship, offering best practices and principles for writing clean and maintainable code."
   },
   {
     id: 7,
@@ -170,7 +170,7 @@ export const sampleBooks = [
       "https://m.media-amazon.com/images/I/71VStSjZmpL._AC_UF1000,1000_QL80_.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "A timeless guide for developers to hone their skills and improve their programming practices.",
+      "A timeless guide for developers to hone their skills and improve their programming practices."
   },
   {
     id: 8,
@@ -187,6 +187,6 @@ export const sampleBooks = [
       "https://m.media-amazon.com/images/I/81Dky+tD+pL._AC_UF1000,1000_QL80_.jpg",
     video: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
-      "Morgan Housel explores the unique behaviors and mindsets that shape financial success and decision-making.",
-  },
+      "Morgan Housel explores the unique behaviors and mindsets that shape financial success and decision-making."
+  }
 ];

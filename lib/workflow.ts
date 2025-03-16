@@ -16,7 +16,7 @@ export const sendEmail = async ({
   subject,
   message
 }: {
-  email: string;  
+  email: string;
   subject: string;
   message: string;
 }) => {

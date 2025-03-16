@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import BookOverview from "@/components/BookOverview";
 import BookList from "@/components/BookList";
-import { sampleBooks } from "./constants";
+import { sampleBooks } from "../constants";
 import { db } from "@/database/drizzle";
 import { users } from "@/database/schema";
 

@@ -1,5 +1,8 @@
-import { sendEmail } from "@/lib/workflow";
 import { serve } from "@upstash/workflow/nextjs";
+import { db } from "@/database/drizzle";
+import { users } from "@/database/schema";
+import { eq } from "drizzle-orm";
+import { sendEmail } from "@/lib/workflow";
 
 type UserState = "non-active" | "active";
 
@@ -38,11 +41,11 @@ const getUserState = async (email: string): Promise<UserState> => {
 export const { POST } = serve<InitialData>(async (context) => {
   const { email, fullName } = context.requestPayload;
 
-
-
   await context.run("new-signup", async () => {
     await sendEmail({
-        email,subject:"Welcome to the platrorm", message:`Welcome ${fullName}!`,
+      email,
+      subject: "Welcome to the platform",
+      message: `Welcome ${fullName}!`,
     });
   });
 
@@ -50,20 +53,27 @@ export const { POST } = serve<InitialData>(async (context) => {
 
   while (true) {
     const state = await context.run("check-user-state", async () => {
-      return await getUserState();
+      return await getUserState(email);
     });
 
     if (state === "non-active") {
       await context.run("send-email-non-active", async () => {
-        await sendEmail("Email to non-active users", email);
+        await sendEmail({
+          email,
+          subject: "Are you still there?",
+          message: `Hey ${fullName}, we miss you!`,
+        });
       });
     } else if (state === "active") {
       await context.run("send-email-active", async () => {
-        await sendEmail("Send newsletter to active users", email);
+        await sendEmail({
+          email,
+          subject: "Welcome back!",
+          message: `Welcome back ${fullName}!`,
+        });
       });
     }
 
     await context.sleep("wait-for-1-month", 60 * 60 * 24 * 30);
   }
 });
-

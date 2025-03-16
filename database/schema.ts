@@ -35,7 +35,6 @@ export const users = pgTable("users", {
   }).defaultNow()
 });
 
-
 export const books = pgTable("books", {
   id: uuid("id").notNull().primaryKey().defaultRandom().unique(),
   title: varchar("title", { length: 255 }).notNull(),
@@ -68,4 +67,3 @@ export const borrowRecords = pgTable("borrow_records", {
   status: BORROW_STATUS_ENUM("status").default("BORROWED").notNull(),
   createdAt: timestamp("created_at", { withTimezone: true }).defaultNow()
 });
-
