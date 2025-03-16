@@ -2,16 +2,45 @@
 
 Welcome to the **University Library Management System** – a modern, scalable, and efficient library solution designed to streamline book borrowing, user management, and administrative workflows. Built with cutting-edge technologies, this system provides an intuitive experience for both students and administrators.
 
-## 🚀 Features
+## 🚀 Features of This Project
 
-- **User Authentication**: Secure login and personalized onboarding.
-- **Advanced Book Search**: Filters, pagination, and sorting options.
-- **Book Borrowing & Reminders**: Automated due-date alerts and receipts.
-- **Profile Management**: Track borrowed books and manage accounts.
-- **Admin Panel**: User role management, approvals, and analytics.
-- **Automated Workflows**: Email notifications for book borrowing, inactivity, and role changes.
-- **Database Optimization**: Uses PostgreSQL with caching for high performance.
-- **Modern UI/UX**: Built with Tailwind CSS and responsive design.
+### 🔐 Authentication & User Management  
+- **Secure Open-Source Authentication** – Personalized onboarding with email notifications.  
+- **Profile Management** – Track borrowed books, manage accounts, and download receipts.  
+- **Role-Based Access Control** – Modify user roles, invite admins, and send automated email notifications.  
+- **User Approval System** – Admin-reviewed account requests with verification emails.  
+- **All Users Page** – Manage and control user access.  
+
+### 📖 Book & Library Features  
+- **Home Page** – Showcases featured and newly added books with 3D effects.  
+- **Library Catalog** – Advanced search, filtering, and pagination for effortless book discovery.  
+- **Book Details** – Displays availability, summaries, videos, and recommendations for similar books.  
+- **All Books Page** – Comprehensive list of all books with advanced filtering and pagination.  
+- **Book Management Forms** – Add new books and edit existing entries.  
+- **Borrowing Records** – Complete borrowing history with search and pagination.  
+
+### 📩 Automated Notifications  
+- **Onboarding Emails** – Sends welcome emails and follow-ups based on user activity.  
+- **Borrowing Reminders** – Custom email notifications before, on, and after the due date.  
+- **Borrowing Receipts** – Automatically generates a PDF receipt for successful borrow transactions.  
+
+### 📊 Dashboard & Analytics  
+- **Admin Dashboard** – View statistics, new users, books, and borrow requests.  
+- **Account Requests Page** – Admin approval for new accounts with email alerts.  
+
+### 🛡️ Security & Performance  
+- **Advanced Functionalities** – Caching, rate-limiting, DDoS protection, and custom alerts.  
+- **Database Management** – Powered by Postgres with Neon for scalability and collaboration.  
+- **Efficient Caching** – Uses Upstash Redis for caching and optimized workflows.  
+
+### 🎨 UI/UX & Technology Stack  
+- **Modern UI/UX** – Built with TailwindCSS, ShadCN, and cutting-edge design tools.  
+- **Tech Stack** – Developed with **Next.js + TypeScript**, ensuring scalability and performance.  
+- **Authentication & Email Handling** – Uses **NextAuth** for authentication and **Resend** for automated email communications.  
+- **Real-Time Media Processing** – ImageKit for image and video optimization.  
+- **Database ORM** – Uses **Drizzle ORM** for efficient database interactions.  
+
+---  
 
 ## 🛠 Tech Stack
 
