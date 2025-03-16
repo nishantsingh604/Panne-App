@@ -1,6 +1,12 @@
-# University Library Management System
+![image](https://github.com/user-attachments/assets/fbbb0605-bb22-4ca3-b6f6-0239bf41a99d)
 
-Welcome to the **University Library Management System** – a modern, scalable, and efficient library solution designed to streamline book borrowing, user management, and administrative workflows. Built with cutting-edge technologies, this system provides an intuitive experience for both students and administrators.
+
+# 📖**Panne** -> Inn panno mai hi sab hai...
+
+Welcome to **Panne** – a modern, scalable, and efficient book management system designed to streamline book borrowing, user management, and administrative workflows. Built with cutting-edge technologies, this system provides an intuitive experience for both students and administrators. This project brings about my love for books merged with my tech skills.
+
+---  
+
 
 ## 🚀 Features of This Project
 
@@ -13,11 +19,10 @@ Welcome to the **University Library Management System** – a modern, scalable, 
 
 ### 📖 Book & Library Features  
 - **Home Page** – Showcases featured and newly added books with 3D effects.  
-- **Library Catalog** – Advanced search, filtering, and pagination for effortless book discovery.  
+- **Library Catalog** – Advanced search, filtering for effortless book discovery.  
 - **Book Details** – Displays availability, summaries, videos, and recommendations for similar books.  
-- **All Books Page** – Comprehensive list of all books with advanced filtering and pagination.  
-- **Book Management Forms** – Add new books and edit existing entries.  
-- **Borrowing Records** – Complete borrowing history with search and pagination.  
+- **All Books Page** – Comprehensive list of all books with advanced filtering.  
+- **Book Management Forms** – Add new books and edit existing entries.   
 
 ### 📩 Automated Notifications  
 - **Onboarding Emails** – Sends welcome emails and follow-ups based on user activity.  
@@ -49,3 +54,5 @@ Welcome to the **University Library Management System** – a modern, scalable, 
 - **Storage & Optimization**: Upstash, ImageKit
 - **Email Handling**: Resend API
 - **Security & Performance**: Rate limiting, DDoS protection, caching
+
+---
